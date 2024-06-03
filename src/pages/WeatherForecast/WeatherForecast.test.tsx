@@ -31,7 +31,7 @@ describe('test weather forecast page', () => {
     const resultElement = await waitFor(() =>
       screen.getByTestId('weather-result')
     )
-    expect(resultElement).toHaveTextContent('Weather forecast')
+    expect(resultElement).toHaveTextContent("Today's weather forecast")
     expect(mockedAxios.get).toHaveBeenCalledWith(
       'http://localhost:3000/api/weather/kolkata'
     )

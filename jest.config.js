@@ -25,7 +25,8 @@ module.exports = {
     '<rootDir>/node_modules',
     '<rootDir>/build',
     '<rootDir>/out',
-    '<rootDir>/coverage'
+    '<rootDir>/coverage',
+    '/e2e-tests/'
   ],
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   moduleNameMapper: {
