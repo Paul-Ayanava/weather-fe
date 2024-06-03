@@ -1,0 +1,32 @@
+.weather-today {
+    border: 1px solid rgb(180, 130, 57);
+    border-radius: 1rem;
+    font-size: medium;
+    height: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    &__heading {
+        text-align: center;
+    }
+    &__advices {
+        padding-left: 0;
+    }
+    &__advice {
+        list-style: none;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
+@media (min-width:768px) {
+    .weather-today{
+        max-width: fit-content;
+        &__temp {
+            display: flex;
+            &__value {
+                margin-right: 1rem;
+            }
+        }
+    }
+    
+}

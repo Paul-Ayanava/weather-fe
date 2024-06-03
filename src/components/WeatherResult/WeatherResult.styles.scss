@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  .weatherResult {
+    display: flex;
+    justify-content: center;
+    &__overview {
+      width: 15%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &__today {
+      width: 30%;
+      &__temp {
+        display: flex;
+      }
+    }
+
+    &__forecast {
+      width: 50%;
+    }
+  }
+}

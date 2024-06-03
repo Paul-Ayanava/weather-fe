@@ -1,0 +1,15 @@
+ .searchbar {
+   margin: 2rem;
+    &__input {
+      width: 50%;
+      height: 2rem;
+      margin-right: 2rem;
+    }
+    &__button {
+      width: 5rem;
+      height: 2rem;
+      background-color: blanchedalmond;
+      border: 1px solid rgb(40, 10, 10);
+      border-radius: 0.5rem;
+    }
+ }

@@ -1,0 +1,22 @@
+.weather-card {
+    border: 1px solid rgb(83, 156, 195);
+    border-radius: 1rem;
+    font-size: medium;
+    max-width: fit-content;
+    padding: 1rem;
+    margin: 1rem;
+    &__heading {
+        text-align: center;
+        margin-top: 0;
+    }
+    &__item {
+        margin-bottom: 0.25rem;
+    }
+    &__advices {
+        padding-left: 0;
+    }
+    &__advice {
+        list-style: none;
+        margin-bottom: 0.5rem;
+    }
+}
