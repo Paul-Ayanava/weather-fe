@@ -33,7 +33,7 @@ describe('test weather forecast page', () => {
     )
     expect(resultElement).toHaveTextContent("Today's weather forecast")
     expect(mockedAxios.get).toHaveBeenCalledWith(
-      'http://localhost:3000/api/weather/kolkata'
+      'https://weatherbe.azurewebsites.net/api/weather/kolkata'
     )
   })
 

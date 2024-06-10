@@ -4,9 +4,6 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 import { WeatherData } from '../../types/weatherData'
 import WeatherResult from '../../components/WeatherResult/WeatherResult'
 import './WeatherForecast.styles.scss'
-import { mockWeatherDetails } from '../../mocks'
-import CurrentWeather from '../../components/CurrentWeather/CurrentWeather'
-import WeatherCard from '../../components/WeatherCard/WeatherCard'
 
 const WeatherForecast = () => {
   const [city, setCity] = useState<string>()
@@ -21,7 +18,7 @@ const WeatherForecast = () => {
     let weatherDetailsData
     try {
       weatherDetailsData = await axios.get(
-        `http://localhost:3000/api/weather/${updatedCity}`
+        `https://weatherbe.azurewebsites.net/api/weather/${updatedCity}`
       )
       setWeatherData(weatherDetailsData.data)
       setLoading(false)
