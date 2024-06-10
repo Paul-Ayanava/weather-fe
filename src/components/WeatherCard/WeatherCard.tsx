@@ -29,7 +29,7 @@ const WeatherCard = ({ weatherData }: WeatherCardProps) => {
       {conditions && conditions?.length > 0 && (
         <>
           <h4>Advices</h4>
-          <ul className="weather-card__advices">
+          <ul className="weather-card__advices" data-testid="weather-advices">
             {conditions.map((condition) => (
               <li className="weather-card__advice">{condition}</li>
             ))}

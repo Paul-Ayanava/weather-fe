@@ -28,7 +28,7 @@ const CurrentWeather = ({ weatherData, addClasses }: CurrentWeeatherProps) => {
       {conditions && conditions?.length > 0 && (
         <>
           <h4 className="weather-today__heading">Advices for today</h4>
-          <ul className="weather-today__advices">
+          <ul className="weather-today__advices" data-testid="weather-advices">
             {conditions.map((condition) => (
               <li className="weather-today__advice">{condition}</li>
             ))}

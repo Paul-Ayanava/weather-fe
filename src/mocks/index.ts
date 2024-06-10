@@ -30,3 +30,11 @@ export const mockWeatherDetails = {
 export const mockErrorResult = {
   errors: { message: 'Error connecting to the origin service' }
 }
+
+export const mockDailyWeatherData = {
+  tempMax: 32.81,
+  tempMin: 26.39,
+  windSpeed: 6.39,
+  weather: ['rain'],
+  date: '2024-06-02'
+}
