@@ -1,7 +1,6 @@
 import React from 'react'
 import { WeatherResultProps } from './WeatherResult.types'
 import './WeatherResult.styles.scss'
-import CurrentWeather from '../CurrentWeather/CurrentWeather'
 import WeatherCard from '../WeatherCard/WeatherCard'
 
 const WeatherResult = ({ weatherData }: WeatherResultProps) => {
@@ -10,7 +9,7 @@ const WeatherResult = ({ weatherData }: WeatherResultProps) => {
   return (
     <div className="weatherResult" data-testid="weather-result">
       <>
-        <CurrentWeather weatherData={currentWeather} />
+        <WeatherCard weatherData={currentWeather} type="today" />
         <section>
           {futureWeather?.map((weatherInfo) => (
             <WeatherCard weatherData={weatherInfo} />

@@ -2,7 +2,7 @@ import React from 'react'
 import { WeatherCardProps } from './WeatherCard.types'
 import './WeatherCard.styles.scss'
 
-const WeatherCard = ({ weatherData }: WeatherCardProps) => {
+const WeatherCard = ({ weatherData, type = 'future' }: WeatherCardProps) => {
   const {
     date,
     tempMax,
@@ -13,7 +13,9 @@ const WeatherCard = ({ weatherData }: WeatherCardProps) => {
   } = weatherData
   return (
     <div className="weather-card">
-      <h3 className="weather-card__heading">weather forecast of {date}</h3>
+      <h3 className="weather-card__heading">
+        Weather forecast of {type === 'today' ? 'today' : date}
+      </h3>
       <p className="weather-card__item">
         <strong>Max temperature:</strong> {tempMax}°C
       </p>
